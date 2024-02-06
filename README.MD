@@ -7,7 +7,7 @@ Simplified Product Data is a developer-friendly JSON format designed to provide 
 * Must be a valid JSON object
 * Must be concise
 * Must be human readable
-* Must include parsed barcode information
+* Must include decoded barcode data
 
 ## Example Data Structure
 
