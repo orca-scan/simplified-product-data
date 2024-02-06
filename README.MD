@@ -9,7 +9,7 @@ Simplified Product Data is a developer friendly data structure designed to make 
 * Must be human readable
 * Must include parsed barcode information
 
-## Example
+## Example Data Structure
 
 ```json
 {
@@ -130,6 +130,13 @@ Simplified Product Data is a developer friendly data structure designed to make 
   ]
 }
 ```
+
+## How to Contribute
+
+There are many ways to get involved:
+
+* **Suggestions:** share your feedback/suggestions via GitHub Issues
+* **Contribute:** submit a pull requests with your improvements
 
 ## License
 
