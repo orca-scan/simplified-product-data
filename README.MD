@@ -11,34 +11,34 @@ The data structure is broken down into 3 top level objects:
 
 Property       | Description
 ---------------|-----------------------------------------------------------------------------
-`url`          | The URL to the product page
-`language`     | The language code for the product information
-`title`        | The title of the product
+`url`          | URL of the product page
+`language`     | Language code for the product information
+`title`        | Title of the product
 `description`  | A brief description of the product
-`images`       | An array of objects containing image URLs and types. See below for structure
-`barcode`      | An object containing barcode details. See below for structure
-`price`        | The price of the product (empty if not provided)
-`currency`     | The currency code for the price (empty if not provided)
-`availability` | The availability status of the product (empty if not provided)
+`images`       | Array of objects containing image URLs and types
+`barcode`      | Object containing decoded barcode details
+`price`        | Price of the product (empty if not provided)
+`currency`     | Currency code for the price _(empty if not provided)_
+`availability` | Availability status of the product _(empty if not provided)_
 
 ## Organization Details
 
 Property     | Description
 -------------|--------------------------------------------------------------------------------
-`url`        | The URL to the organization's homepage.
-`name`       | The name of the organization.
-`faviconUrl` | The URL to the organization's favicon.
-`logoUrl`    | The URL to the organization's logo.
-`logoColors` | An object containing color information about the logo. See below for structure.
+`url`        | URL of the organization's homepage
+`name`       | Name of the organization
+`faviconUrl` | URL of the organization's favicon
+`logoUrl`    | URL of the organization's logo
+`logoColors` | Object containing color information for the logo
 
 ## Related Links
 
 Property | Description
 ---------|---------------------------------------------
-`href`   | The URL associated with the link.
-`rel`    | The relationship or type of the link.
-`method` | The HTTP method used for accessing the link.
-`title`  | A descriptive title for the link.
+`href`   | URL associated with the link
+`rel`    | The relationship of the link to the product
+`method` | HTTP method used to access the link
+`title`  | A descriptive title for the link
 
 <!-- ## Goals
 
