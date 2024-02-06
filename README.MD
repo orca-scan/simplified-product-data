@@ -2,12 +2,50 @@
 
 Simplified Product Data is a developer-friendly JSON format designed to provide easy access to detailed product information, including barcode data, with minimal effort. It removes the need for developers to create complex parsers or barcode decoders by making the key information accessible in a readable format.
 
-## Goals
+The data structure is broken down into 3 top level objects:
+* [Product Details](#ProductDetails)
+* [Organization Details](#OrganizationDetails)
+* [Related Links](#RelatedLinks)
+
+## Product Details
+
+Property       | Description
+---------------|-----------------------------------------------------------------------------
+`url`          | The URL to the product page
+`language`     | The language code for the product information
+`title`        | The title of the product
+`description`  | A brief description of the product
+`images`       | An array of objects containing image URLs and types. See below for structure
+`barcode`      | An object containing barcode details. See below for structure
+`price`        | The price of the product (empty if not provided)
+`currency`     | The currency code for the price (empty if not provided)
+`availability` | The availability status of the product (empty if not provided)
+
+## Organization Details
+
+Property     | Description
+-------------|--------------------------------------------------------------------------------
+`url`        | The URL to the organization's homepage.
+`name`       | The name of the organization.
+`faviconUrl` | The URL to the organization's favicon.
+`logoUrl`    | The URL to the organization's logo.
+`logoColors` | An object containing color information about the logo. See below for structure.
+
+## Related Links
+
+Property | Description
+---------|---------------------------------------------
+`href`   | The URL associated with the link.
+`rel`    | The relationship or type of the link.
+`method` | The HTTP method used for accessing the link.
+`title`  | A descriptive title for the link.
+
+<!-- ## Goals
 
 * Must be a valid JSON object
 * Must be concise
 * Must be human readable
-* Must include decoded barcode data
+* Must include decoded barcode data -->
 
 ## Example Data Structure
 
