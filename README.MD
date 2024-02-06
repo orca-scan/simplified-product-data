@@ -1,6 +1,6 @@
 # Simplified Product Data (SPD)
 
-Simplified Product Data is a developer friendly data structure designed to make it as simple as possible for developers to ingest detailed product data, including decoded barcode information with the minimal effort.
+Simplified Product Data is a developer friendly data structure designed to make it as simple as possible for developers to ingest detailed product information, including decoded barcode data with the minimal effort.
 
 ## Goals
 
