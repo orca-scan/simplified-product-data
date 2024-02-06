@@ -21,47 +21,6 @@ Property       | Description
 `currency`     | Currency code for the price _(empty if not provided)_
 `availability` | Availability status of the product _(empty if not provided)_
 
-### Product Example
-
-```json
-{
-  "url": "https://www.juxfood.com/products/beetroot-80g",
-  "language": "en",
-  "title": "Beetroot 80g Pot",
-  "description": "9 small fresh beetroots in every pot! Unlock cardiovascular benefits with beets",
-  "images": [
-    {
-      "url": "http://www.juxfood.com/cdn/shop/files/11_a223a8ca-d342-44ff-baf4-fbd48246e188.png?v=1706723201",
-      "type": "image/png"
-    }
-  ],
-  "barcode": {
-    "isValid": true,
-    "gtin": "05065016432004",
-    "gtin8": "",
-    "gtin12": "",
-    "gtin13": "5065016432004",
-    "gtin14": "05065016432004",
-    "machineReadable": "\u001d0105065016432004",
-    "humanReadable": "(01)05065016432004",
-    "digitalLink": "https://orca.link/01/05065016432004",
-    "imageUrl": "https://orca.link/01/05065016432004.svg",
-    "values": [
-      {
-        "ai": "01",
-        "name": "GTIN",
-        "description": "Global Trade Item Number",
-        "raw": "05065016432004",
-        "value": "05065016432004"
-      }
-    ]
-  },
-  "price": "",
-  "currency": "",
-  "availability": ""
-}
-```
-
 ## Organization Details
 
 Property     | Description
