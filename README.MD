@@ -133,4 +133,4 @@ Simplified Product Data is a developer friendly data structure designed to make 
 
 ## License
 
-Licensed under [MIT License](LICENSE) &copy; [Orca Scan](https://orcascan.com)
+SPD is proudly open-sourced under the [MIT License](LICENSE). See LICENSE for details.
