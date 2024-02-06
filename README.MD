@@ -1,6 +1,6 @@
 # Simplified Product Data (SPD)
 
-Simplified Product Data is a developer friendly, JSON data structure designed to make it as simple as possible for developers to ingest detailed product information, including decoded barcode data with the minimal effort.
+Simplified Product Data is a developer-friendly JSON format designed to provide easy access to detailed product information, including barcode data, with minimal effort. It removes the need for developers to create complex parsers or barcode decoders by making the key information accessible in a readable format.
 
 ## Goals
 
