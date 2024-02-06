@@ -7,6 +7,8 @@ The data structure is broken down into 3 top level objects:
 * [Organization Details](#OrganizationDetails)
 * [Related Links](#RelatedLinks)
 
+For a better understand of how this works, see the [Example Data Structure](#example-data-structure).
+
 ## Product Details
 
 Property       | Description
