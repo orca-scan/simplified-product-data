@@ -31,7 +31,7 @@ Property     | Description
 `name`       | Name of the organization
 `faviconUrl` | URL of the organization's favicon
 `logoUrl`    | URL of the organization's logo
-`logoColors` | Object containing color information for the logo
+`logoColors` | Object containing color information for the logo. See [example.json](example.json#L43)
 
 ## Related Links
 
