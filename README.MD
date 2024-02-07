@@ -1,6 +1,6 @@
 # Simplified Product Data (SPD)
 
-**Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ with minimal effort. It was created to remove the need for developers to build complex parsers or barcode decoders into their application, by ensuring key information is accessible upon request.
+**Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ with minimal effort. It was created to remove the need for developers to build complex parsers or barcode decoders into their application, by ensuring key product information is accessible upon request.
 
 The data structure is broken down into 3 top level objects:
 * [product](#product)
