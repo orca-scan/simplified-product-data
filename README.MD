@@ -179,11 +179,11 @@ Property | Description
 
 ## How to Contribute
 
-There are many ways to get involved:
+There are a couple of ways to get involved:
 
 * **Suggestions:** share your feedback/suggestions via GitHub Issues
 * **Contribute:** submit a pull requests with your improvements
 
 ## License
 
-SPD is proudly open-sourced under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE) &copy; [Orca Scan](https://orcascan.com)
