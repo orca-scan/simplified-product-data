@@ -11,6 +11,8 @@ For a better understand of how this works, see the [Example Data Structure](#exa
 
 ## product
 
+Object containing detailed product information, including preparsed barcode data:
+
 Property       | Description
 ---------------|-----------------------------------------------------------------------------
 `url`          | URL of the product page
@@ -24,6 +26,8 @@ Property       | Description
 `availability` | Availability status of the product _(empty if not provided)_
 
 ## org
+
+Object containing high level organisation information:
 
 Property     | Description
 -------------|--------------------------------------------------------------------------------
