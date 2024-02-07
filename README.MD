@@ -11,7 +11,7 @@ For a better understand of how this works, see the [Example Data Structure](#exa
 
 ## product
 
-Object containing detailed product information, including preparsed barcode data:
+Object containing detailed product information, including parsed barcode data:
 
 Property       | Description
 ---------------|-----------------------------------------------------------------------------
