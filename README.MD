@@ -35,7 +35,7 @@ Property     | Description
 
 ## links
 
-Any array of related links:
+Any array of object containing information about related links:
 
 Property | Description
 ---------|---------------------------------------------
