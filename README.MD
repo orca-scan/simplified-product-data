@@ -18,7 +18,7 @@ Property       | Description
 `title`        | Title of the product
 `description`  | A brief description of the product
 `images`       | Array of objects containing image URLs and types
-`barcode`      | Object containing decoded barcode details
+`barcode`      | Object containing decoded barcode details. See [example.json](example.json#L13)
 `price`        | Price of the product (empty if not provided)
 `currency`     | Currency code for the price _(empty if not provided)_
 `availability` | Availability status of the product _(empty if not provided)_
