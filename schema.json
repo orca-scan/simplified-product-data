@@ -1,0 +1,191 @@
+{
+    "type": "object",
+    "id": "default",
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "title": " Simplified Product Data schema",
+    "additionalProperties": false,
+    "properties": {
+        "product": {
+            "title": "Product Info",
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "language": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "images": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "url": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "type": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "barcode": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                        "isValid": {
+                            "type": "boolean",
+                            "required": true
+                        },
+                        "gtin": {
+                            "type": "string",
+                            "required": true
+                        },
+                        "gtin8": {
+                            "type": "string"
+                        },
+                        "gtin12": {
+                            "type": "string"
+                        },
+                        "gtin13": {
+                            "type": "string"
+                        },
+                        "gtin14": {
+                            "type": "string"
+                        },
+                        "machineReadable": {
+                            "type": "string",
+                            "required": true
+                        },
+                        "humanReadable": {
+                            "type": "string",
+                            "required": true
+                        },
+                        "digitalLink": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "imageUrl": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "values": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "required": true
+                                    },
+                                    "description": {
+                                        "type": "string",
+                                        "required": true
+                                    },
+                                    "raw": {
+                                        "type": "string",
+                                        "required": true
+                                    },
+                                    "value": {
+                                        "type": "string",
+                                        "required": true
+                                    }
+                                }
+                            }
+                        },
+                        "price": {
+                            "type": "string"
+                        },
+                        "currency": {
+                            "type": "string"
+                        },
+                        "availability": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "org": {
+            "title": "Organization Info",
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "required": true
+                },
+                "name": {
+                    "type": "string",
+                    "required": true
+                },
+                "faviconUrl": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "logoUrl": {
+                    "type": "string",
+                    "format": "uri",
+                    "required": true
+                },
+                "logoColors": {
+                    "type": "object",
+                    "properties": {
+                        "lightest": {
+                            "type": "string"
+                        },
+                        "darkest": {
+                            "type": "string"
+                        },
+                        "dominant": {
+                            "type": "string"
+                        },
+                        "background": {
+                            "type": "string"
+                        },
+                        "palette": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "links": {
+            "type": "array",
+            "additionalProperties": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "method": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "rel": {
+                        "type": "string",
+                        "required": true
+                    },
+                    "title": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
