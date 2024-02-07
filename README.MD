@@ -3,13 +3,13 @@
 **Simplified Product Data** is an open source JSON data structure, designed to provide developers with easy access to detailed product information _(including barcode data)_ with minimal effort. It was created to remove the need for developers to build complex parsers or barcode decoders into their application, by ensuring key information is accessible in a simple JSON format upon request.
 
 The data structure is broken down into 3 top level objects:
-* [Product](#product)
-* [Org](#org)
-* [Links](#links)
+* [product](#product)
+* [org](#org)
+* [links](#links)
 
 For a better understand of how this works, see the [Example Data Structure](#example-data-structure).
 
-## Product
+## product
 
 Property       | Description
 ---------------|-----------------------------------------------------------------------------
@@ -23,7 +23,7 @@ Property       | Description
 `currency`     | Currency code for the price _(empty if not provided)_
 `availability` | Availability status of the product _(empty if not provided)_
 
-## Org
+## org
 
 Property     | Description
 -------------|--------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ Property     | Description
 `logoUrl`    | URL of the organization's logo
 `logoColors` | Object containing color information for the logo. See [example.json](example.json#L43)
 
-## Links
+## links
 
 Property | Description
 ---------|---------------------------------------------
