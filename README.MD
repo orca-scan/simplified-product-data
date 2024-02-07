@@ -182,7 +182,7 @@ Property | Type     | Description
 There are a couple of ways to get involved:
 
 * **Suggestions:** share your feedback/suggestions via GitHub Issues
-* **Contribute:** submit a pull requests with your improvements
+* **Contribute:** submit a pull requests with improvements
 
 ## License
 
