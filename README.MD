@@ -35,6 +35,8 @@ Property     | Description
 
 ## links
 
+Any array of related links:
+
 Property | Description
 ---------|---------------------------------------------
 `href`   | URL associated with the link
