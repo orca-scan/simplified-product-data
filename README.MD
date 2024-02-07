@@ -13,40 +13,40 @@ For a better understand of how this works, see the [Example Data Structure](#exa
 
 Object containing detailed product information, including parsed barcode data:
 
-Property       | Description
-:---------------|:-----------------------------------------------------------------------------
-`url`          | URL of the product page
-`language`     | Language code for the product information
-`title`        | Title of the product
-`description`  | A brief description of the product
-`images`       | Array of objects containing image URLs and types
-`barcode`      | Object containing decoded barcode data. See [example.json](example.json#L13)
-`price`        | Price of the product _(empty if not provided)_
-`currency`     | Currency code for the price _(empty if not provided)_
-`availability` | Availability status of the product _(empty if not provided)_
+Property       | Type     | Description
+:--------------|----------|:----------------------------------------------------------------------------
+`url`          | `string` | URL of the product page
+`language`     | `string` | Language code for the product information
+`title`        | `string` | Title of the product
+`description`  | `string` | A brief description of the product
+`images`       | `array`  | Array of objects containing image URLs and types
+`barcode`      | `object` | Object containing decoded barcode data. See [example.json](example.json#L13)
+`price`        | `string` | Price of the product _(empty if not provided)_
+`currency`     | `string` | Currency code for the price _(empty if not provided)_
+`availability` | `string` | Availability status of the product _(empty if not provided)_
 
 ## org
 
 Object containing high level organisation information:
 
-Property     | Description
--------------|--------------------------------------------------------------------------------
-`url`        | URL of the organization's homepage
-`name`       | Name of the organization
-`faviconUrl` | URL of the organization's favicon
-`logoUrl`    | URL of the organization's logo
-`logoColors` | Object containing logo color information. See [example.json](example.json#L43)
+Property     | Type     | Description
+:------------|:---------|:------------------------------------------------------------------------------
+`url`        | `string` | URL of the organization's homepage
+`name`       | `string` | Name of the organization
+`faviconUrl` | `string` | URL of the organization's favicon
+`logoUrl`    | `string` | URL of the organization's logo
+`logoColors` | `object` | Object containing logo color information. See [example.json](example.json#L43)
 
 ## links
 
-Any array of objects containing information about related links:
+Any array of objects containing related links:
 
-Property | Description
----------|---------------------------------------------
-`href`   | URL associated with the link
-`rel`    | The relationship of the link to the product
-`method` | HTTP method used to access the link
-`title`  | A descriptive title for the link
+Property | Type     | Description
+:--------|:---------|:-------------------------------------------
+`href`   | `string` | URL associated with the link
+`rel`    | `string` | The relationship of the link to the product
+`method` | `string` | HTTP method used to access the link
+`title`  | `string` | A descriptive title for the link
 
 <!-- ## Goals
 
