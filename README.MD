@@ -9,7 +9,7 @@ The data structure is broken down into 3 top level objects:
 
 For a better understand of how this works, see the [Complete Data Structure](#complete-data-structure).
 
-## product
+## `product`
 
 Object containing detailed product information, including parsed barcode data:
 
@@ -25,7 +25,7 @@ Property       | Type     | Description
 `currency`     | `string` | Currency code for the price _(empty if not provided)_
 `availability` | `string` | Availability status of the product _(empty if not provided)_
 
-## org
+## `org`
 
 Object containing high level organisation information:
 
@@ -37,7 +37,7 @@ Property     | Type     | Description
 `logoUrl`    | `string` | URL of the organization's logo
 `logoColors` | `object` | Object containing logo color information. See [example.json](example.json#L43)
 
-## links
+## `links`
 
 Any array of objects containing related links:
 
