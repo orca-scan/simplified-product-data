@@ -18,7 +18,7 @@ Property       | Description
 `title`        | Title of the product
 `description`  | A brief description of the product
 `images`       | Array of objects containing image URLs and types
-`barcode`      | Object containing decoded barcode details. See [example.json](example.json#L13)
+`barcode`      | Object containing decoded barcode data. See [example.json](example.json#L13)
 `price`        | Price of the product _(empty if not provided)_
 `currency`     | Currency code for the price _(empty if not provided)_
 `availability` | Availability status of the product _(empty if not provided)_
@@ -31,7 +31,7 @@ Property     | Description
 `name`       | Name of the organization
 `faviconUrl` | URL of the organization's favicon
 `logoUrl`    | URL of the organization's logo
-`logoColors` | Object containing color information for the logo. See [example.json](example.json#L43)
+`logoColors` | Object containing logo color information. See [example.json](example.json#L43)
 
 ## links
 
