@@ -14,7 +14,7 @@ For a better understand of how this works, see the [Example Data Structure](#exa
 Object containing detailed product information, including parsed barcode data:
 
 Property       | Description
----------------|-----------------------------------------------------------------------------
+:---------------|:-----------------------------------------------------------------------------
 `url`          | URL of the product page
 `language`     | Language code for the product information
 `title`        | Title of the product
