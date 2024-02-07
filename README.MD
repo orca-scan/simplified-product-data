@@ -7,7 +7,7 @@ The data structure is broken down into 3 top level objects:
 * [org](#org)
 * [links](#links)
 
-For a better understand of how this works, see the [Example Data Structure](#example-data-structure).
+For a better understand of how this works, see the [Complete Data Structure](#complete-data-structure).
 
 ## product
 
@@ -55,7 +55,7 @@ Property | Type     | Description
 * Must be human readable
 * Must include decoded barcode data -->
 
-## Example Data Structure
+## Complete Data Structure
 
 ```json
 {
