@@ -19,25 +19,34 @@ Property       | Type     | Description
 `language`     | `string` | Language code for the product information
 `title`        | `string` | Title of the product
 `description`  | `string` | A brief description of the product
-`images`       | `array`  | Array of objects containing image URLs and types
+`images`       | `array`  | Array of objects containing product images. See [example.json](example.json#L7)
 `barcode`      | `object` | Object containing decoded barcode data. See [example.json](example.json#L13)
-`price`        | `string` | Price of the product _(empty if not provided)_
-`currency`     | `string` | Currency code for the price _(empty if not provided)_
-`availability` | `string` | Availability status of the product _(empty if not provided)_
+`price`        | `string` | Price of the product
+`currency`     | `string` | Currency code for the price
+`availability` | `string` | Availability status of the product
+
+### `product.images[0]`
+
+Array of product images:
+
+Property | Type     | Description
+:--------|----------|:------------------------
+`url`    | `string` | URL of the product image
+`type`   | `string` | Image mime type
 
 ### `product.barcode`
 
-Nested object containing detailed barcode information:
+Object containing detailed barcode information:
 
 Property          | Type      | Description
-:-----------------|-----------|:------------------------------------------------------------------------
+:-----------------|-----------|:-------------------------------------------------------------------
 `isValid`         | `boolean` | True if valid, otherwise false
 `gtin`            | `string`  | The GS1 Global Trade Item Number (GTIN)
 `gtin8`           | `string`  | 8 digit version of the GTIN
 `gtin12`          | `string`  | 12 digit version of the GTIN
 `gtin13`          | `string`  | 13 digit version of the GTIN
 `gtin14`          | `string`  | 14 digit version of the GTIN
-`machineReadable` | `string`  | Machine readable version of the barocde _(inc hidden escape characters)_
+`machineReadable` | `string`  | Machine readable version of the barocde _(inc hidden characters)_
 `humanReadable`   | `string`  | Barcode in Human Readable Interpretation (HRI) format
 `digitalLink`     | `string`  | GS1 Digital Link version of the barcode
 `imageUrl`        | `string`  | Url to the barcode image
