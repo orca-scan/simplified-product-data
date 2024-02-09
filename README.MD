@@ -25,7 +25,7 @@ Property       | Type     | Description
 `currency`     | `string` | Currency code for the price
 `availability` | `string` | Availability status of the product
 
-### `product.images[0]`
+### `product.images`
 
 Array of product images:
 
