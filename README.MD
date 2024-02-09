@@ -11,7 +11,7 @@ For a better understand of how this works, see the [Complete Data Structure](#co
 
 ## `product`
 
-Object containing detailed product information, including parsed barcode data:
+Object containing detailed product information:
 
 Property       | Type     | Description
 :--------------|----------|:----------------------------------------------------------------------------
@@ -24,6 +24,24 @@ Property       | Type     | Description
 `price`        | `string` | Price of the product _(empty if not provided)_
 `currency`     | `string` | Currency code for the price _(empty if not provided)_
 `availability` | `string` | Availability status of the product _(empty if not provided)_
+
+### `product.barcode`
+
+Nested object containing detailed barcode information:
+
+Property          | Type      | Description
+:-----------------|-----------|:------------------------------------------------------------------------
+`isValid`         | `boolean` | True if valid, otherwise false
+`gtin`            | `string`  | The GS1 Global Trade Item Number (GTIN)
+`gtin8`           | `string`  | 8 digit version of the GTIN
+`gtin12`          | `string`  | 12 digit version of the GTIN
+`gtin13`          | `string`  | 13 digit version of the GTIN
+`gtin14`          | `string`  | 14 digit version of the GTIN
+`machineReadable` | `string`  | Machine readable version of the barocde _(inc hidden escape characters)_
+`humanReadable`   | `string`  | Barcode in Human Readable Interpretation (HRI) format
+`digitalLink`     | `string`  | GS1 Digital Link version of the barcode
+`imageUrl`        | `string`  | Url to the barcode image
+`values`          | `array`   | Array of extracted barcode values _(expiry dates, lot numbers etc)_
 
 ## `org`
 
