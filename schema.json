@@ -1,6 +1,6 @@
 {
     "type": "object",
-    "id": "default",
+    "id": "https://github.com/orca-scan/simplified-product-data/blob/v1.0.0/schema.json",
     "$schema": "http://json-schema.org/draft-03/schema#",
     "title": " Simplified Product Data schema",
     "additionalProperties": false,
