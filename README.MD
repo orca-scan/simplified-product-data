@@ -196,7 +196,7 @@ Property | Type     | Description
       "method": "GET"
     },
     {
-      "href": "https://orca.link/schema.json",
+      "href": "https://raw.githubusercontent.com/orca-scan/simplified-product-data/v1.0.0/schema.json",
       "rel": "describedby",
       "method": "GET"
     }
