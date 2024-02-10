@@ -88,7 +88,7 @@ Property     | Type            | Description
 
 ### `links`
 
-Any array of objects containing related links _(see [example.json](example.json#L58))_:
+An array of objects containing related links _(see [example.json](example.json#L58))_:
 
 Property | Type     | Description
 :--------|:---------|:-------------------------------------------
