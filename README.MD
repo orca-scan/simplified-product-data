@@ -2,21 +2,29 @@
 
 **Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ with minimal effort.
 
-It was created by the [Orca Scan team](https://orcascan.com/about-us) as part of the GS1 Digital Link solution. Orca Scan automatically generates a Digital Link home page for every QR code, the SPD format is what is returned when requesting a GS1 Digital Link with the HTTP accept header set to application/json. The goal is to provide WMS/POS systems with structured data on scan, removing the need to parse barcodes or lookup additional information. 
+It was created by the [Orca Scan team](https://orcascan.com/about-us) as part of the [GS1 Digital Link](https://orcascan.com/solutions/how-to-create-a-gs1-digital-link-qr-code-059f8b29#what-is-a-gs1-gtin) solution. Orca Scan automatically generates a Digital Link home page for every QR code, the SPD format is returned when requesting a GS1 Digital Link with the HTTP `Accept: application/json`. The goal is to provide WMS/POS systems with structured data on scan, removing the need to parse barcodes or lookup additional information.
 
-It is broken down into 3 top level objects:
+For example the following GS1 Digital Link homepage [https://orca.link/01/05065016432004](https://orca.link/01/05065016432004) returns [example.json](example.json) when requested using `curl`:
+
+```bash
+curl -H "Accept: application/json" https://orca.link/01/05065016432004
+```
+
+## Data Structure
+
+SPD is broken down into 3 top level objects:
 * [product](#product)
 * [org](#org)
 * [links](#links)
 
 For a better understanding, see the [Complete Data Structure](#complete-data-structure).
 
-## `product`
+### `product`
 
 Object containing detailed product information:
 
 Property       | Type     | Description
-:--------------|----------|:----------------------------------------------------------------------------
+:--------------|----------|:-------------------------------------------------------------------------------
 `url`          | `string` | URL of the product page
 `language`     | `string` | Language code for the product information
 `title`        | `string` | Title of the product
@@ -27,7 +35,7 @@ Property       | Type     | Description
 `currency`     | `string` | Currency code for the price
 `availability` | `string` | Availability status of the product
 
-### `product.images`
+#### `product.images`
 
 Array of product images:
 
@@ -36,25 +44,25 @@ Property | Type     | Description
 `url`    | `string` | URL of the product image
 `type`   | `string` | Image mime type
 
-### `product.barcode`
+#### `product.barcode`
 
 Object containing detailed barcode information:
 
-Property          | Type      | Description
-:-----------------|-----------|:-------------------------------------------------------------------
-`isValid`         | `boolean` | True if valid, otherwise false
-`gtin`            | `string`  | The GS1 Global Trade Item Number (GTIN)
-`gtin8`           | `string`  | 8 digit version of the GTIN
-`gtin12`          | `string`  | 12 digit version of the GTIN
-`gtin13`          | `string`  | 13 digit version of the GTIN
-`gtin14`          | `string`  | 14 digit version of the GTIN
-`machineReadable` | `string`  | Machine readable version of the barocde _(inc hidden characters)_
-`humanReadable`   | `string`  | Barcode in Human Readable Interpretation (HRI) format
-`digitalLink`     | `string`  | GS1 Digital Link version of the barcode
-`imageUrl`        | `string`  | Url to the barcode image
-`values`          | `array`   | Array of extracted barcode values _(expiry dates, lot numbers etc)_
+Property          | Type            | Description
+:-----------------|-----------------|:-------------------------------------------------------------------
+`isValid`         | `boolean`       | True if valid, otherwise false
+`gtin`            | `string`        | The GS1 Global Trade Item Number (GTIN)
+`gtin8`           | `string`        | 8 digit version of the GTIN
+`gtin12`          | `string`        | 12 digit version of the GTIN
+`gtin13`          | `string`        | 13 digit version of the GTIN
+`gtin14`          | `string`        | 14 digit version of the GTIN
+`machineReadable` | `string`        | Machine readable version of the barocde _(inc hidden characters)_
+`humanReadable`   | `string`        | Barcode in Human Readable Interpretation (HRI) format
+`digitalLink`     | `string`        | GS1 Digital Link version of the barcode
+`imageUrl`        | `string`        | Url to the barcode image
+`values`          | `array[object]` | Array of extracted barcode values _(expiry dates, lot numbers etc)_
 
-## `org`
+### `org`
 
 Object containing high level organisation information:
 
@@ -66,7 +74,19 @@ Property     | Type     | Description
 `logoUrl`    | `string` | URL of the organization's logo
 `logoColors` | `object` | Object containing logo color information. See [example.json](example.json#L43)
 
-## `links`
+#### `org.logoColors`
+
+Object containing logo color information:
+
+Property     | Type            | Description
+:------------|:----------------|:----------------------------------------------------
+`lightest`   | `string`        | lightest color found in the logo in hex format
+`darkest`    | `string`        | darkest color found in the logo in hex format
+`dominant`   | `string`        | Most dominant colour found in the logo in hex format
+`background` | `string`        | Background color found  in the logo in hex format
+`palette`    | `array[string]` | Array of colours found in the logo
+
+### `links`
 
 Any array of objects containing related links:
 
