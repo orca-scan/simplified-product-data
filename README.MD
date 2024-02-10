@@ -56,7 +56,7 @@ Property          | Type            | Description
 `gtin12`          | `string`        | 12 digit version of the GTIN
 `gtin13`          | `string`        | 13 digit version of the GTIN
 `gtin14`          | `string`        | 14 digit version of the GTIN
-`machineReadable` | `string`        | Machine readable version of the barocde _(inc hidden characters)_
+`machineReadable` | `string`        | Machine readable version incuding hidden characters
 `humanReadable`   | `string`        | Barcode in Human Readable Interpretation (HRI) format
 `digitalLink`     | `string`        | GS1 Digital Link version of the barcode
 `imageUrl`        | `string`        | Url to the barcode image
