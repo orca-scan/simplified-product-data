@@ -57,7 +57,7 @@ Property          | Type            | Description
 `gtin13`          | `string`        | 13 digit version of the GTIN
 `gtin14`          | `string`        | 14 digit version of the GTIN
 `machineReadable` | `string`        | Machine readable version incuding hidden characters
-`humanReadable`   | `string`        | Barcode in Human Readable Interpretation (HRI) format
+`humanReadable`   | `string`        | Human Readable Interpretation (HRI) format
 `digitalLink`     | `string`        | GS1 Digital Link version of the barcode
 `imageUrl`        | `string`        | Url to the barcode image
 `values`          | `array[object]` | Array of extracted barcode values _(expiry dates, lot numbers etc)_
