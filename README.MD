@@ -17,7 +17,7 @@ SPD contains 3 top level objects:
 
 ### `product`
 
-Object containing detailed product information:
+Detailed product information:
 
 Property       | Type            | Description
 :--------------|-----------------|:------------------------------------------------------------
@@ -33,7 +33,7 @@ Property       | Type            | Description
 
 #### `product.images`
 
-Array of objects conaining product image information _(see [example.json](example.json#L7))_:
+Array of product image objects _(see [example.json](example.json#L7))_:
 
 Property | Type     | Description
 :--------|----------|:------------------------
@@ -42,7 +42,7 @@ Property | Type     | Description
 
 #### `product.barcode`
 
-Object containing decoded barcode information _(see [example.json](example.json#L13))_:
+Decoded barcode information _(see [example.json](example.json#L13))_:
 
 Property          | Type            | Description
 :-----------------|-----------------|:-------------------------------------------------------------------
@@ -60,7 +60,7 @@ Property          | Type            | Description
 
 ### `org`
 
-Object containing high level organisation information:
+High level organisation information:
 
 Property     | Type     | Description
 :------------|:---------|:------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ Property     | Type     | Description
 
 #### `org.logoColors`
 
-Object containing logo color information _(see [example.json](example.json#L43))_:
+Logo color information _(see [example.json](example.json#L43))_:
 
 Property     | Type            | Description
 :------------|:----------------|:----------------------------------------------------
@@ -84,7 +84,7 @@ Property     | Type            | Description
 
 ### `links`
 
-An array of objects containing related links _(see [example.json](example.json#L58))_:
+Array of related links _(see [example.json](example.json#L58))_:
 
 Property | Type     | Description
 :--------|:---------|:-------------------------------------------
