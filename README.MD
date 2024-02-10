@@ -4,7 +4,7 @@
 
 It was created by the [Orca Scan team](https://orcascan.com/about-us) as part of the GS1 Digital Link solution. Orca Scan automatically generates a Digital Link home page for every QR code, the SPD format is what is returned when requesting a GS1 Digital Link with the HTTP accept header set to application/json. The goal is to provide WMS/POS systems with structured data on scan, removing the need to parse barcodes or lookup additional information. 
 
-The data structure is broken down into 3 top level objects:
+It is broken down into 3 top level objects:
 * [product](#product)
 * [org](#org)
 * [links](#links)
