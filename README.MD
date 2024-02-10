@@ -15,8 +15,6 @@ SPD contains 3 top level objects:
 * [org](#org)
 * [links](#links)
 
-For a better understanding, see the [Complete Data Structure](#complete-data-structure).
-
 ### `product`
 
 Object containing detailed product information:
@@ -95,7 +93,7 @@ Property | Type     | Description
 `method` | `string` | HTTP method used to access the link
 `title`  | `string` | A descriptive title for the link
 
-## Complete Data Structure
+### Complete Data Structure
 
 ```json
 {
