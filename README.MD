@@ -23,21 +23,21 @@ For a better understanding, see the [Complete Data Structure](#complete-data-str
 
 Object containing detailed product information:
 
-Property       | Type     | Description
-:--------------|----------|:-------------------------------------------------------------------------------
-`url`          | `string` | URL of the product page
-`language`     | `string` | Language code for the product information
-`title`        | `string` | Title of the product
-`description`  | `string` | A brief description of the product
-`images`       | `array`  | Array of objects containing product images. See [example.json](example.json#L7)
-`barcode`      | `object` | Object containing decoded barcode data. See [example.json](example.json#L13)
-`price`        | `string` | Price of the product
-`currency`     | `string` | Currency code for the price
-`availability` | `string` | Availability status of the product
+Property       | Type            | Description
+:--------------|-----------------|:------------------------------------------------------------
+`url`          | `string`        | URL of the product page
+`language`     | `string`        | Language code for the product information
+`title`        | `string`        | Title of the product
+`description`  | `string`        | A brief description of the product
+`images`       | `array[object]` | Array of objects containing [product images](#productimages)
+`barcode`      | `object`        | Object containing [decoded barcode data](#productbarcode)
+`price`        | `string`        | Price of the product
+`currency`     | `string`        | Currency code for the price
+`availability` | `string`        | Availability status of the product
 
 #### `product.images`
 
-Array of product images:
+Array of objects conaining product image information _(see [example.json](example.json#L7))_:
 
 Property | Type     | Description
 :--------|----------|:------------------------
@@ -46,7 +46,7 @@ Property | Type     | Description
 
 #### `product.barcode`
 
-Object containing detailed barcode information:
+Object containing decoded barcode information _(see [example.json](example.json#L13))_:
 
 Property          | Type            | Description
 :-----------------|-----------------|:-------------------------------------------------------------------
@@ -72,11 +72,11 @@ Property     | Type     | Description
 `name`       | `string` | Name of the organization
 `faviconUrl` | `string` | URL of the organization's favicon
 `logoUrl`    | `string` | URL of the organization's logo
-`logoColors` | `object` | Object containing logo color information. See [example.json](example.json#L43)
+`logoColors` | `object` | Object containing [logo color information](#orglogocolors)
 
 #### `org.logoColors`
 
-Object containing logo color information:
+Object containing logo color information _(see [example.json](example.json#L43))_:
 
 Property     | Type            | Description
 :------------|:----------------|:----------------------------------------------------
@@ -88,7 +88,7 @@ Property     | Type            | Description
 
 ### `links`
 
-Any array of objects containing related links:
+Any array of objects containing related links _(see [example.json](example.json#L58))_:
 
 Property | Type     | Description
 :--------|:---------|:-------------------------------------------
@@ -96,13 +96,6 @@ Property | Type     | Description
 `rel`    | `string` | The relationship of the link to the product
 `method` | `string` | HTTP method used to access the link
 `title`  | `string` | A descriptive title for the link
-
-<!-- ## Goals
-
-* Must be a valid JSON object
-* Must be concise
-* Must be human readable
-* Must include decoded barcode data -->
 
 ## Complete Data Structure
 
