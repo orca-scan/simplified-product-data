@@ -2,7 +2,7 @@
 
 **Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ with minimal effort. It was created to remove the need for developers to build complex parsers or barcode decoders into their applications, by ensuring key product information is accessible upon request.
 
-It was created by the [Orca Scan team](https://orcascan.com/about-us) as part of the GS1 Digital Link solution. Orca Scan automatically generates a Digital Link home page for every QR code, the SPD format is what is returned when requesting a GS1 Digital Link with the HTTP accept header set to application/json.
+It was created by the [Orca Scan team](https://orcascan.com/about-us) as part of the GS1 Digital Link solution. Orca Scan automatically generates a Digital Link home page for every QR code, the SPD format is what is returned when requesting a GS1 Digital Link with the HTTP accept header set to application/json. The goal is to provide WMS/POS systems structured data on scan, removing the need to parse barcodes or lookup additional information. 
 
 The data structure is broken down into 3 top level objects:
 * [product](#product)
