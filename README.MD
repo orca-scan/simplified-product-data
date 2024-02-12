@@ -5,7 +5,7 @@
 The goal is to provide WMS/POS systems with structured data on scan, removing the need to parse barcodes or lookup additional information. For example this [GS1 Digital Link homepage](https://orca.link/01/05065016432004) returns [example.json](example.json) when requested using `curl`:
 
 ```bash
-curl -H "Accept: application/json" https://orca.link/01/05065016432004
+curl -H "Accept: application/json" https://id.juxfood.com/01/05065016432004
 ```
 
 ## Data Structure
@@ -117,8 +117,8 @@ Property | Type     | Description
       "gtin14": "05065016432004",
       "machineReadable": "\u001d0105065016432004",
       "humanReadable": "(01)05065016432004",
-      "digitalLink": "https://orca.link/01/05065016432004",
-      "imageUrl": "https://orca.link/01/05065016432004.svg",
+      "digitalLink": "https://id.juxfood.com/01/05065016432004",
+      "imageUrl": "https://id.juxfood.com/01/05065016432004.svg",
       "values": [
         {
           "ai": "01",
@@ -202,7 +202,7 @@ Property | Type     | Description
       "method": "GET"
     },
     {
-      "href": "https://orca.link/01/05065016432004.json",
+      "href": "https://id.juxfood.com/01/05065016432004.json",
       "rel": "self",
       "method": "GET"
     },
