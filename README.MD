@@ -2,7 +2,7 @@
 
 **Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ when a [GS1 Digital Link](https://orcascan.com/solutions/how-to-create-a-gs1-digital-link-qr-code-059f8b29) barcode is scanned.
 
-For example this [GS1 Digital Link homepage](https://orca.link/01/05065016432004) returns [example.json](SPD) when requested using `Accept: application/json`:
+For example this [GS1 Digital Link homepage](https://orca.link/01/05065016432004) returns [SPD](example.json) when requested using `Accept: application/json`:
 
 ```bash
 curl -H "Accept: application/json" https://id.juxfood.com/01/05065016432004
