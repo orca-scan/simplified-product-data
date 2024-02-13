@@ -1,6 +1,6 @@
 # Simplified Product Data (SPD)
 
-**Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ with minimal effort.
+**Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ when a GS1 Digital Link barcode is scanned.
 
 The goal is to provide WMS/POS systems with structured data on scan, removing the need to parse barcodes or lookup additional information. For example this [GS1 Digital Link homepage](https://orca.link/01/05065016432004) returns [example.json](example.json) when requested using `curl`:
 
