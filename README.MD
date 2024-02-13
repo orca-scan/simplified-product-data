@@ -2,7 +2,7 @@
 
 **Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ when a [GS1 Digital Link](https://orcascan.com/solutions/how-to-create-a-gs1-digital-link-qr-code-059f8b29) barcode is scanned.
 
-The goal is to provide WMS/POS systems with structured data on scan, removing the need to parse barcodes or lookup additional information. For example this [GS1 Digital Link homepage](https://orca.link/01/05065016432004) returns [example.json](example.json) when requested using `curl`:
+For example this [GS1 Digital Link homepage](https://orca.link/01/05065016432004) returns [example.json](example.json) when requested using `curl`:
 
 ```bash
 curl -H "Accept: application/json" https://id.juxfood.com/01/05065016432004
@@ -224,7 +224,7 @@ The trouble is, the [GS1 Digital Link spec](https://ref.gs1.org/standards/digita
 * Execute multiple request to for basic product information
 * Navigate complex JSON objects for basic product attributes
 
-The goal of this data structure, is to provide all the key information to the developer in the first request to the Digital Link URL, eliminating all of the issues above.
+The goal of this data structure is to provide key information to the developer in the first request to the Digital Link URL, eliminating the above issues.
 
 ## Background
 
@@ -234,8 +234,8 @@ The goal of this data structure, is to provide all the key information to the de
 
 There are a couple of ways to get involved:
 
-* **Suggestions:** share your feedback/suggestions via GitHub Issues
-* **Contribute:** submit a pull requests with improvements
+* **Suggestions:** share your feedback/concerns/suggestions via GitHub Issues
+* **Contribute:** submit a Pull Requests with improvements
 
 ## License
 
