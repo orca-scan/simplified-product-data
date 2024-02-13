@@ -221,10 +221,10 @@ The new [GS1 Digital Link barcode](https://orcascan.com/solutions/how-to-create-
 
 The trouble is, the [GS1 Digital Link spec](https://ref.gs1.org/standards/digital-link/uri-syntax/) still requires developer to:
 * Parse barcode values within their application code
-* Navigate a complex JSON objects for basic product attributes
-* Follow a list of links get basic product information
+* Execute multiple request to for basic product information
+* Navigate complex JSON objects for basic product attributes
 
-The goal of this data structure, is to provide all the key information to the developer simply by requesting the GS1 Digital Link URL.
+The goal of this data structure, is to provide all the key information to the developer in the first request to the Digital Link URL, eliminating all of the issues above.
 
 ## Background
 
