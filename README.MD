@@ -224,7 +224,7 @@ The trouble is, the [GS1 Digital Link spec](https://ref.gs1.org/standards/digita
 * Follow links and execute multiple request for basic product information
 * Navigate complex JSON objects to extract basic product data
 
-The goal of [SPD](https://github.com/orca-scan/simplified-product-data) is to provide the above information to the developer in the first request. Additional, more indepth information such as ingredients can be obtained by following the related HATEOAS link [`gs1:ingredientsInfo`](https://www.gs1.org/voc/ingredientsInfo) in the `links` array.
+The goal of [SPD](https://github.com/orca-scan/simplified-product-data) is to provide the above information to the developer in the first request. Additional, more indepth information such as ingredients can be obtained by following the related HATEOAS link `rel=gs1:ingredientsInfo` in the `links` array _(if present)_.
 
 ## Background
 
