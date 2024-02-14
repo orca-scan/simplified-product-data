@@ -228,7 +228,7 @@ The goal of [SPD](https://github.com/orca-scan/simplified-product-data) is to pr
 
 ## Background
 
-**Simplified Product Data** was created by the [Orca Scan team](https://orcascan.com/about-us) as part of the [GS1 Digital Link](https://orcascan.com/solutions/how-to-create-a-gs1-digital-link-qr-code-059f8b29) solution. Orca Scan automatically generates a GS1 Digital Link homepage for every GS1 GTIN, the SPD format is returned when requesting a GS1 Digital Link URL with the HTTP header `Accept: application/json`.
+**Simplified Product Data** was created by the [Orca Scan team](https://orcascan.com/about-us) as part of the [GS1 Digital Link solution](https://orcascan.com/solutions/how-to-create-a-gs1-digital-link-qr-code-059f8b29). Orca Scan automatically generates a GS1 Digital Link homepage for every GS1 GTIN, the SPD format is returned when requesting a GS1 Digital Link URL with the HTTP header `Accept: application/json`.
 
 ## How to Contribute
 
