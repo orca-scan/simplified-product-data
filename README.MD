@@ -20,7 +20,7 @@ SPD contains 3 top level objects:
 Core product information:
 
 Property       | Type            | Description
-:--------------|-----------------|:------------------------------------------------------------
+:--------------|:----------------|:------------------------------------------------------------
 `url`          | `string`        | URL of the product page
 `language`     | `string`        | Language code for the product information
 `title`        | `string`        | Title of the product
@@ -36,7 +36,7 @@ Property       | Type            | Description
 Array of product image objects _(see [example.json](example.json#L7))_:
 
 Property | Type     | Description
-:--------|----------|:------------------------
+:--------|:---------|:------------------------
 `url`    | `string` | URL of the product image
 `type`   | `string` | Image mime type
 
@@ -45,7 +45,7 @@ Property | Type     | Description
 Decoded barcode information _(see [example.json](example.json#L13))_:
 
 Property          | Type            | Description
-:-----------------|-----------------|:-------------------------------------------------------------------
+:-----------------|:----------------|:-----------------------------------------------------------------
 `isValid`         | `boolean`       | True if valid, otherwise false
 `gtin`            | `string`        | The GS1 Global Trade Item Number (GTIN)
 `gtin8`           | `string`        | 8 digit version of the GTIN
@@ -63,7 +63,7 @@ Property          | Type            | Description
 High level organisation information:
 
 Property     | Type     | Description
-:------------|:---------|:------------------------------------------------------------------------------
+:------------|:---------|:----------------------------------------------------------
 `url`        | `string` | URL of the organization's homepage
 `name`       | `string` | Name of the organization
 `faviconUrl` | `string` | URL of the organization's favicon
@@ -91,7 +91,7 @@ Property | Type     | Description
 `href`   | `string` | URL associated with the link
 `rel`    | `string` | The relationship of the link to the product
 `method` | `string` | HTTP method used to access the link
-`title`  | `string` | A descriptive title for the link
+`title`  | `string` | A display friendly title for the link
 
 ### Complete Data Structure
 
