@@ -1,6 +1,6 @@
 # Simplified Product Data (SPD)
 
-**Simplified Product Data** is an open source data structure designed to provide developers with easy access to detailed product information _(including parsed barcode data)_ when a [GS1 Digital Link](https://orcascan.com/solutions/how-to-create-a-gs1-digital-link-qr-code-059f8b29) barcode is scanned.
+**Simplified Product Data** is an open source data structure designed to provide developers with easy access to core product information _(including parsed barcode data)_ when a [GS1 Digital Link](https://orcascan.com/solutions/how-to-create-a-gs1-digital-link-qr-code-059f8b29) barcode is scanned.
 
 For example this [GS1 Digital Link homepage](https://orca.link/01/05065016432004) returns [SPD](example.json) when requested using `Accept: application/json`:
 
@@ -17,7 +17,7 @@ SPD contains 3 top level objects:
 
 ### `product`
 
-Detailed product information:
+Core product information:
 
 Property       | Type            | Description
 :--------------|-----------------|:------------------------------------------------------------
@@ -221,8 +221,8 @@ The new [GS1 Digital Link barcode](https://orcascan.com/solutions/how-to-create-
 
 The trouble is, the [GS1 Digital Link spec](https://ref.gs1.org/standards/digital-link/uri-syntax/) still requires developer to:
 * Parse barcode values within their application code
-* Follow links and execute multiple request for basic product information
-* Navigate complex JSON objects to extract basic product data
+* Follow links and execute multiple request for core product information
+* Navigate complex JSON objects to extract core product information
 
 The goal of [SPD](https://github.com/orca-scan/simplified-product-data) is to provide the above information to the developer in the first request. Additional information such as ingredients can be obtained by following the related `rel=gs1:ingredientsInfo` link in the `links` array.
 
